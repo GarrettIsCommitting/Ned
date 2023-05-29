@@ -1,4 +1,5 @@
 @import "@tryghost/shared-theme-assets/assets/css/v2/screen.css";
+@import "home.css";
 
 :root {
     --font-serif: EB Garamond, serif;

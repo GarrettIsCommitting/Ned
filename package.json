@@ -1,25 +1,25 @@
 {
-    "name": "taste",
-    "description": "A Ghost theme",
-    "version": "1.0.0",
+    "name": "ned",
+    "description": "A theme for luddite.beer",
+    "version": "0.0.2",
     "private": true,
     "engines": {
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Garrett Allen",
+        "email": "g@garrettis.online",
+        "url": "https://garrettis.online"
     },
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "beer"
     ],
-    "docs": "https://taste.ghost.io/about/",
     "config": {
-        "posts_per_page": 12,
+        "posts_per_page": 5,
         "image_sizes": {
             "xs": {
                 "width": 150
@@ -45,11 +45,11 @@
             "style": {
                 "type": "select",
                 "options": ["Elegant", "Playful"],
-                "default": "Elegant"
+                "default": "Playful"
             },
             "background_color": {
                 "type": "color",
-                "default": "#faf6e9"
+                "default": "#fafafa"
             },
             "navigation_layout": {
                 "type": "select",
@@ -58,25 +58,25 @@
             },
             "email_signup_text": {
                 "type": "text",
-                "default": "Subscribe for daily recipes. No spam, just food."
+                "default": "Subscribe for rare missives."
             },
             "footer_text": {
                 "type": "text"
             },
             "primary_header": {
                 "type": "text",
-                "default": "Delicious meals in under 15 minutes",
+                "default": "Esoteric and Traditional Brews",
                 "group": "homepage"
             },
             "secondary_header": {
                 "type": "text",
-                "default": "A new recipe everyday, directly in your inbox.",
+                "default": "Sparging responsibly since 2010.",
                 "group": "homepage"
             },
             "header_action": {
                 "type": "select",
                 "options": ["Subscribe", "Search", "No action"],
-                "default": "Subscribe",
+                "default": "Search",
                 "group": "homepage"
             },
             "enter_tag_slugs_for_homepage_sections": {
