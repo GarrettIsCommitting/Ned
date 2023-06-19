@@ -9,42 +9,20 @@
     {{/match}}
 <section class="p-hero-buttons">
     <div>
-        {{! Link to the brews tag page }}
-        <a href="https://luddite.beer/tags/brews">View our brews &rarr;</a>   
-        {{! Link to the labels tag page }}
+        {{! Link to the brews tag }}
+        <a href="https://luddite.beer/tag/brews">View our brews &rarr;</a>   
+        {{! Link to the labels page }}
         <a href="https://luddite.beer/just-labels">Marvel at our labels &rarr;</a>
+        {{! Link to the manefesto }}
+        <a href="https://luddite.beer/manifesto/">Read our manifesto &rarr;</a>
     </div>
 </section>
-<section class="p-outer">
-    <div class="p-hero">
-        <h1>Luddite Brewing Manifesto</h1>
 
-        <p>A loose knit collective creating small batch culinary delights benefiting our community and ourselves.</p>
-        
-        <h2>Loose Knit Collective</h2>
-        <p>Luddite Brewing is a not for profit organization centered around three founding members. Our membership and our projects are dynamic, dependent on our interests, whims, availability, needs of the community as well as other factors not yet enumerated.</p>
-        
-        <h2>Creating</h2>
-        <p>Within the Luddite Brewing world, creating is a term synonymous with exploration and learning. We do not profess to be experts in any of our endeavors. Indeed, it is our naïveté and interest to learn of cultures, styles and techniques that drive our project selection.</p>
-    
-        <h2>Small Batch</h2>
-        <p>As Luddite Brewing takes our first steps on this adventure, the term artisanal may be more reflective of hubris than of accomplishment. Small batch; however, speaks both to our volumetric capabilities and, more importantly, to a foundational belief that a direct involvement, hands on approach creates a product that is more meaningful to the producer and to the consumer.</p>
-
-        <h2>Culinary</h2>
-        <p>At Luddite Brewing, culinary is applied to all manner of drink and food that involve human intervention to transform (and hopefully improve) raw ingredients into a fully realized product.</p>
-
-        <h2>Delights</h2>
-        <p>Luddite Brewing seeks to bring joy to the senses during preparation, presentation and consumption.</p>
-
-        <h2>Benefiting our Community</h2>
-        <p>Throughout our endeavors Luddite Brewing seeks ways to expand participation in our projects by members of the community and to identify opportunities to use our projects as mechanisms to provide tangible support to non-profit organizations dedicated to the sustenance of the community.</p>
-
-        <h2>...And Ourselves</h2>
-        <p>If we are unable to meet these objectives without realizing personal enjoyment and growth, then Luddite Brewing has missed its principal reason for forming.</p>
+<section class="p-post-container">
+    <div>
+        <h2 class="gh-list-title">What we've been up to</h2>
+        </br>
     </div>
-    <hr/>
-</section>
-
     {{> "components/list" layout="magazine" count="5" showExcerpt=true showPrimaryTag=true}}
 
     {{#if @custom.enter_tag_slugs_for_homepage_sections}}
@@ -70,4 +48,5 @@
             {{/get}}
         {{/match}}
     {{/if}}
+</section>
 </main>
