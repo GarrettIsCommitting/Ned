@@ -7,31 +7,31 @@
     {{else match @custom.header_action "Subscribe"}}
         {{> "components/header" layout="wide" background="image" action="email" primary=@custom.primary_header secondary=@custom.secondary_header}}
     {{/match}}
+
+<section class="p-post-container">
+
+    {{#get "posts" filter="featured:true" order="posts.count DESC" limit="1"}}
+        {{> "components/list" layout="magazine" count="1" showExcerpt=true showPrimaryTag=true}}
+    {{/get}}
+
+</section>
 <section class="p-hero-buttons">
     <div>
-        {{! Link to the brews tag }}
-        <a href="https://luddite.beer/tag/brews">View our brews &rarr;</a>   
+        {{! Link to the manefesto }}
+        <a href="https://luddite.beer/manifesto/">Read the manifesto &rarr;</a>
         {{! Link to the labels page }}
         <a href="https://luddite.beer/just-labels">Marvel at our labels &rarr;</a>
-        {{! Link to the manefesto }}
-        <a href="https://luddite.beer/manifesto/">Read our manifesto &rarr;</a>
     </div>
 </section>
 
 <section class="p-post-container">
-    <div>
-        <h2 class="gh-list-title">What we've been up to</h2>
-        </br>
-    </div>
-    {{> "components/list" layout="magazine" count="5" showExcerpt=true showPrimaryTag=true}}
-
     {{#if @custom.enter_tag_slugs_for_homepage_sections}}
         {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_homepage_sections}}]"}}
             {{#foreach tags}}
                 {{#if @odd}}
-                    {{> "components/list" layout="grid" column="3" count="3" showHeader=true}}
+                    {{> "components/list" layout="grid" column="3" count="3" showHeader=true showExcerpt=true}}
                 {{else}}
-                    {{> "components/list" layout="grid" column="4" count="4" showHeader=true}}
+                    {{> "components/list" layout="grid" column="4" count="4" showHeader=true showExcerpt=true}}
                 {{/if}}
             {{/foreach}}
         {{/get}}
@@ -49,4 +49,10 @@
         {{/match}}
     {{/if}}
 </section>
+{{!-- <section class="p-hero-buttons">
+    <div>
+        {{! Link to the brews tag }}
+        <a href="https://luddite.beer/tag/brews">View all our brews &rarr;</a>  
+    </div>
+</section> --}}
 </main>
